@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript 05</title>
+
+    <!--BS 5.2 CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container">
+        <h3>QUẢN LÝ TUYỂN SINH</h3>
+        <div class="mb-3">
+            <label for="" class="form-label">Nhập thông tin</label>
+            <input type="text" class="form-control" name="" id="diemChuan" aria-describedby="helpId"
+                placeholder="Điểm chuẩn">
+
+            <div class="mb-3">
+                <!-- <label for="" class="form-label">Chọn Khu Vực</label> -->
+                <select class="form-select form-select-sm" name="" id="khuVuc">
+                    <option selected value="X">Chọn Khu Vực</option>
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <!-- <label for="" class="form-label">Chọn Khu Vực</label> -->
+                <select class="form-select form-select-sm" name="" id="doiTuong">
+                    <option selected value="X">Chọn Đối Tượng</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </div>
+
+            <input type="text" class="form-control" name="" id="diemMon1" aria-describedby="helpId"
+                placeholder="Điểm môn 1">
+            <input type="text" class="form-control" name="" id="diemMon2" aria-describedby="helpId"
+                placeholder="Điểm môn 2">
+            <input type="text" class="form-control" name="" id="diemMon3" aria-describedby="helpId"
+                placeholder="Điểm môn 3">
+        </div>
+        <button id="btnKetQua" type="button" class="btn btn-info" onclick="ketQuaTuyenSinh()">Kết quả</button>
+        <hr>
+        <p id="txtKetQua" class="alert alert-danger"></p>
+    </div>
+
+    <hr>
+    <div class="container">
+        <h3>TÍNH TIỀN ĐIỆN</h3>
+        <div class="mb-3">
+            <input type="text" class="form-control" name="" id="hoTen" aria-describedby="helpId"
+                placeholder="Nhập họ tên">
+
+            <input type="text" class="form-control" name="" id="soDien" aria-describedby="helpId"
+                placeholder="Nhập số kw">
+        </div>
+        <button id="btnKetQua" type="button" class="btn btn-info" onclick="ketQuaTienDien()">Tính tiền điện</button>
+        <hr>
+        <p id="txtTienDien" class="alert alert-info"></p>
+    </div>
+
+
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
+    </script>
+
+    <script src="./js/quanlytuyensinh.js"></script>
+    <script src="./js/tinhtiendien.js"></script>
+
+</body>
+
+</html>
